@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav">
+            <a href="#" class="logo">Radosław Maciejny</a>
+            <nav class="nav-links">
+                <a href="#about">O mnie</a>
+                <a href="#projects">Projekty</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="section about">
+            <div class="badge">
+                <span class="dot"></span>
+                <span>Twórca stron internetowych</span>
+            </div>
+            <h1>Cześć, tworzę proste i funkcjonalne interfejsy.</h1>
+            <p>Specjalizuję się w czystym kodzie HTML, CSS i JavaScript. Stawiam na czytelność, szybkość działania i minimalistyczny design.</p>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="sub">Wybrane prace</div>
+            <h2 class="title">Projekty</h2>
+            <!-- Projekt 1 -->
+           <div class="grid">
+                <div class="card">
+                    <h3>Kalkulator Dat</h3>
+                    <p>Aplikacja do łatwego obliczania różnicy dni między datami oraz sprawdzania dni tygodnia.</p>
+                    <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="links">
+                    <a href="kalkulator.html" target="_blank" rel="noopener noreferrer" class="btn">Obejrzyj projekt</a>
+                    </div>
+                </div>
+
+                <!-- Projekt 2 -->
+                <div class="card">
+                    <h3>Generator Hasła</h3>
+                    <p>Narzędzie pozwalające błyskawicznie wygenerować bezpieczne, losowe hasło z funkcją kopiowania.</p>
+                    <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="links">
+                    <a href="generator.html" target="_blank" rel="noopener noreferrer" class="btn">Obejrzyj projekt</a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section id="contact" class="section">
+            <div class="sub">Napisz do mnie</div>
+            <h2 class="title">Szybki kontakt</h2>
+            <p style="font-size: 14px; color: #94a3b8;">Masz pytania dotyczące współpracy? Skontaktuj się bezpośrednio przez e-mail.</p>
+
+            <div class="contact-links">
+                <a href="mailto:maciejnyradek@gmail.com" class="btn-email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>maciejnyradek@gmail.com</span>
+                </a>
+                <a href="https://github.com/Reppleraaa" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Radosław Maciejny</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Dat</title>
+  <style>
+    body { font-family: sans-serif; background: #0f172a; color: #fff; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+    .box { background: #1e293b; padding: 24px; border-radius: 12px; width: 300px; text-align: center; border: 1px solid #334155; }
+    h2 { color: #10b981; margin-top: 0; }
+    input { width: 100%; padding: 8px; margin: 10px 0; border-radius: 6px; border: 1px solid #475569; background: #0f172a; color: #fff; box-sizing: border-box; }
+    button { width: 100%; padding: 10px; background: #10b981; border: none; color: #000; font-weight: bold; border-radius: 6px; cursor: pointer; }
+    button:hover { background: #059669; }
+    #res { margin-top: 15px; font-weight: bold; color: #34d399; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Oblicz dni</h2>
+    <input type="date" id="d1">
+    <input type="date" id="d2">
+    <button onclick="calc()">Oblicz różnicę</button>
+    <div id="res"></div>
+  </div>
+
+  <script>
+    function calc() {
+      const v1 = new Date(document.getElementById('d1').value);
+      const v2 = new Date(document.getElementById('d2').value);
+      if (isNaN(v1) || isNaN(v2)) {
+        document.getElementById('res').innerText = "Wybierz obie daty!";
+        return;
+      }
+      const diffDays = Math.abs(v2 - v1) / (1000 * 60 * 60 * 24);
+      document.getElementById('res').innerText = `Różnica: ${diffDays} dni`;
+    }
+  </script>
+</body>
+</html>
